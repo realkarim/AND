@@ -25,21 +25,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        Button popular_movies = (Button) findViewById(R.id.popular_movies);
-        Button stack_hawk = (Button) findViewById(R.id.stack_hawk);
-        Button build_it_bigger = (Button) findViewById(R.id.build_it_bigger);
-        Button make_your_app_material = (Button) findViewById(R.id.make_your_app_material);
-        Button go_ubiquitous = (Button) findViewById(R.id.go_ubiquitous);
-        Button capstone = (Button) findViewById(R.id.capstone);
-
-        popular_movies.setOnClickListener(this);
-        stack_hawk.setOnClickListener(this);
-        build_it_bigger.setOnClickListener(this);
-        make_your_app_material.setOnClickListener(this);
-        go_ubiquitous.setOnClickListener(this);
-        capstone.setOnClickListener(this);
-
-
     }
 
     @Override
