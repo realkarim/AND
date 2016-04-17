@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -14,42 +13,57 @@
     tools:context="apps.realkarim.myappportfolio.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
+    <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:textColor="@color/colorAccent"
-        android:text="My Nanodegree Apps!"
-        android:textSize="25sp" />
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/popular_movies"
-        style="@style/AppButton"
-        android:text="POPULAR MOVIES" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/stack_hawk"
-        style="@style/AppButton"
-        android:text="STACK HAWK" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="My Nanodegree Apps!"
+                android:textColor="@color/colorAccent"
+                android:textSize="25sp" />
 
-    <Button
-        android:id="@+id/build_it_bigger"
-        style="@style/AppButton"
-        android:text="BUILD IT BIGGER" />
+            <Button
+                android:id="@+id/popular_movies"
+                style="@style/AppButton"
+                android:text="POPULAR MOVIES" />
 
-    <Button
-        android:id="@+id/make_your_app_material"
-        style="@style/AppButton"
-        android:text="MAKE YOUR APP MATERIAL" />
+            <Button
+                android:id="@+id/stack_hawk"
+                style="@style/AppButton"
+                android:text="STACK HAWK" />
 
-    <Button
-        android:id="@+id/go_ubiquitous"
-        style="@style/AppButton"
-        android:text="GO UBIQUITOUS" />
+            <Button
+                android:id="@+id/build_it_bigger"
+                style="@style/AppButton"
+                android:text="BUILD IT BIGGER" />
 
-    <Button
-        android:id="@+id/capstone"
-        style="@style/AppButton"
-        android:text="CAPSTONE"
-        android:background="@color/colorAccent"/>
-</LinearLayout>
+            <Button
+                android:id="@+id/make_your_app_material"
+                style="@style/AppButton"
+                android:text="MAKE YOUR APP MATERIAL" />
+
+            <Button
+                android:id="@+id/go_ubiquitous"
+                style="@style/AppButton"
+                android:text="GO UBIQUITOUS" />
+
+            <Button
+                android:id="@+id/capstone"
+                style="@style/AppButton"
+                android:background="@color/colorAccent"
+                android:text="CAPSTONE" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
